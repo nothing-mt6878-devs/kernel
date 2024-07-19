@@ -289,6 +289,12 @@ VPATH		:= $(srctree)
 
 export building_out_of_srctree srctree objtree VPATH
 
+DEVICE_MODULES_PATH := $(srctree)/modules/
+KCONFIG_EXT_PREFIX := modules/
+
+export DEVICE_MODULES_PATH
+export KCONFIG_EXT_PREFIX
+
 # To make sure we do not include .config for any of the *config targets
 # catch them early, and hand them over to scripts/kconfig/Makefile
 # It is allowed to specify more targets when calling make, including

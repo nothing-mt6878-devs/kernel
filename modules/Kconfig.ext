@@ -1,0 +1,115 @@
+# SPDX-License-Identifier: GPL-2.0
+
+config DEVICE_MODULES_ALLOW_BUILTIN
+	bool "allow builtin drivers into kernel image"
+	help
+	  All modules are default built as kernel modules.
+	  Set DEVICE_MODULES_ALLOW_BUILTIN=y to build modules
+	  into the kernel image.
+	  If unsure, say N.
+
+source "modules/drivers/memory/Kconfig"
+
+source "modules/drivers/iio/adc/Kconfig"
+
+source "modules/drivers/mfd/Kconfig"
+
+source "modules/drivers/nvmem/Kconfig"
+
+source "modules/drivers/dma/mediatek/Kconfig"
+
+source "modules/drivers/ufs/Kconfig"
+
+source "modules/drivers/char/Kconfig"
+
+source "modules/drivers/clk/mediatek/Kconfig"
+
+source "modules/drivers/clocksource/Kconfig"
+
+source "modules/drivers/cpufreq/Kconfig"
+
+source "modules/drivers/soc/mediatek/Kconfig"
+
+source "modules/drivers/watchdog/Kconfig"
+
+source "modules/drivers/dma-buf/heaps/Kconfig"
+
+source "modules/drivers/regulator/Kconfig"
+
+source "modules/drivers/leds/Kconfig"
+
+source "modules/drivers/pinctrl/mediatek/Kconfig"
+
+source "modules/drivers/power/supply/Kconfig"
+
+source "modules/drivers/rtc/Kconfig"
+
+source "modules/drivers/remoteproc/Kconfig"
+
+source "modules/drivers/rpmsg/Kconfig"
+
+source "modules/drivers/input/keyboard/Kconfig"
+
+source "modules/drivers/phy/mediatek/Kconfig"
+
+source "modules/drivers/thermal/mediatek/Kconfig"
+
+source "modules/drivers/thermal/nothing/Kconfig"
+
+source "modules/drivers/spmi/Kconfig"
+
+source "modules/drivers/tty/serial/8250/Kconfig"
+
+source "modules/drivers/reset/Kconfig"
+
+source "modules/drivers/mailbox/Kconfig"
+
+source "modules/drivers/interconnect/Kconfig"
+
+source "modules/drivers/i2c/busses/Kconfig"
+
+source "modules/drivers/pwm/Kconfig"
+
+source "modules/drivers/spi/Kconfig"
+
+source "modules/drivers/iommu/Kconfig"
+
+source "modules/drivers/tee/Kconfig"
+
+source "modules/drivers/mmc/host/Kconfig"
+
+source "modules/drivers/gpu/drm/mediatek/Kconfig"
+
+source "modules/drivers/input/touchscreen/Kconfig"
+
+source "modules/drivers/input/fingerprint/Kconfig"
+
+source "modules/drivers/gpu/drm/panel/Kconfig"
+
+source "modules/drivers/gpu/mediatek/Kconfig"
+
+source "modules/drivers/media/platform/Kconfig"
+
+source "modules/drivers/usb/Kconfig"
+
+source "modules/drivers/devfreq/Kconfig"
+
+source "modules/drivers/misc/haptic/Kconfig"
+
+source "modules/drivers/misc/mediatek/Kconfig"
+
+source "modules/sound/soc/codecs/Kconfig"
+
+source "modules/sound/soc/mediatek/Kconfig"
+
+source "modules/drivers/pci/controller/Kconfig"
+
+source "modules/drivers/pinctrl/Kconfig"
+
+source "modules/drivers/media/platform/mtk-isp/Kconfig"
+
+source "modules/fs/f2fs/Kconfig"
+
+source "modules/drivers/chino-e/Kconfig"
+
+source "modules/drivers/nothing_stability/Kconfig"
